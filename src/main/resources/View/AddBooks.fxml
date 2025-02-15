@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchor_Books" prefHeight="516.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.AddBookFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0c799" height="68.0" stroke="BLACK" strokeType="INSIDE" width="601.0" />
+      <Label layoutX="103.0" layoutY="2.0" prefHeight="47.0" prefWidth="425.0" text="Books Mangement">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_Bookid" layoutX="61.0" layoutY="101.0" prefHeight="26.0" prefWidth="178.0" promptText="Books ID" />
+      <TextField fx:id="Txt_tiitle" layoutX="348.0" layoutY="101.0" prefHeight="26.0" prefWidth="178.0" promptText="Titttle" />
+      <TextField fx:id="txt_Author" layoutX="61.0" layoutY="160.0" prefHeight="26.0" prefWidth="178.0" promptText="Author" />
+      <TextField fx:id="txt_Isbn" layoutX="348.0" layoutY="160.0" prefHeight="26.0" prefWidth="178.0" promptText="ISBN" />
+      <TextField fx:id="txt_lanvage" layoutX="206.0" layoutY="211.0" prefHeight="26.0" prefWidth="178.0" promptText="Language" />
+      <TableView fx:id="tabel_Books" layoutX="12.0" layoutY="306.0" prefHeight="154.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="colum_booksid" prefWidth="77.33334064483643" text="Books ID" />
+          <TableColumn fx:id="colum_tiittle" prefWidth="115.9999771118164" text="Tittle" />
+            <TableColumn fx:id="colum_Author" prefWidth="109.33335876464844" text="Author" />
+            <TableColumn fx:id="Colum_isbn" prefWidth="63.33331298828125" text="ISBN" />
+            <TableColumn fx:id="Colum_Lanvage" prefWidth="196.00009155273438" text="Lanvage" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="257.0" mnemonicParsing="false" onAction="#btn_Add_Action" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #d0c799;" text="Add" />
+      <Button layoutX="127.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_Search_Action" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #d0c799;" text="Search" />
+      <Button layoutX="254.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_View_Action" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #d0c799;" text="View" />
+      <Button layoutX="374.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_update_Action" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #d0c799;" text="Update" />
+      <Button layoutX="487.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_Delete_Action" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #d0c799;" text="Delete" />
+      <Button layoutX="495.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnBack_BooksManagement_OnAction" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #d0c799;" text="Back" />
+   </children>
+</AnchorPane>

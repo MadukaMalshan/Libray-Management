@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchor_Members" prefHeight="505.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.MemberFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0c799" height="73.0" stroke="BLACK" strokeType="INSIDE" width="562.0" />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="2.0" prefHeight="70.0" prefWidth="459.0" text="Library Members">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_memberid" layoutX="61.0" layoutY="127.0" prefHeight="26.0" prefWidth="186.0" promptText="Member ID" />
+      <TextField fx:id="txt_membername" layoutX="300.0" layoutY="127.0" prefHeight="26.0" prefWidth="186.0" promptText="Full Name" />
+      <TextField fx:id="txt_phoneNumber" layoutX="61.0" layoutY="190.0" prefHeight="26.0" prefWidth="186.0" promptText="Phone Number" />
+      <TextField fx:id="txt_Adrees" layoutX="300.0" layoutY="190.0" prefHeight="26.0" prefWidth="186.0" promptText="Address" />
+      <Label fx:id="lbl_Date" layoutX="111.0" layoutY="81.0" prefHeight="18.0" prefWidth="172.0" text="YYYY/MM/DD" textFill="#94992c" />
+      <TableView fx:id="table_Memeber" layoutX="12.0" layoutY="298.0" prefHeight="152.0" prefWidth="538.0">
+        <columns>
+          <TableColumn fx:id="colum_memberid" prefWidth="74.66665935516357" text="Member_id" />
+          <TableColumn fx:id="colum_full_name" prefWidth="105.3332748413086" text="Full_Name" />
+            <TableColumn fx:id="colum_PhoneNumber" prefWidth="106.00001525878906" text="Phone Number" />
+            <TableColumn fx:id="colum_Adreess" prefWidth="130.6666259765625" text="Adreess" />
+            <TableColumn fx:id="colum_Headmastership" prefWidth="119.33334350585938" text="Memebership Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="17.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn_Search_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #d0c799;" text="Search" />
+      <Button layoutX="125.0" layoutY="254.0" mnemonicParsing="false" onAction="#btn_Add_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #d0c799;" text="Add" />
+      <Button layoutX="241.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn_View_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #d0c799;" text="View" />
+      <Button layoutX="355.0" layoutY="254.0" mnemonicParsing="false" onAction="#btn_update_Action" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #d0c799;" text="Update" />
+      <Button layoutX="460.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn_Delete_Action" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #d0c799;" text="Delete" />
+      <Label layoutX="28.0" layoutY="81.0" prefHeight="18.0" prefWidth="62.0" text=" Date :">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="109.0" text="Member ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="109.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="172.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="172.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="476.0" layoutY="457.0" mnemonicParsing="false" onAction="#btn_Back_Members_OnAction" prefHeight="33.0" prefWidth="57.0" style="-fx-background-color: #d0c799;" text="Back" />
+   </children>
+</AnchorPane>
