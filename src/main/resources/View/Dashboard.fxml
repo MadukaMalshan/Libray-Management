@@ -37,10 +37,15 @@
          <font>
             <Font name="System Bold" size="17.0" />
          </font></Button>
-      <Button layoutX="120.0" layoutY="278.0" mnemonicParsing="false" onAction="#btn_Return_book_Action" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #d0c799;" text="Return Books">
+      <Button layoutX="14.0" layoutY="276.0" mnemonicParsing="false" onAction="#btn_Return_book_Action" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #d0c799;" text="Return Books">
          <font>
             <Font name="System Bold" size="17.0" />
          </font></Button>
       <Button layoutX="507.0" layoutY="291.0" mnemonicParsing="false" onAction="#btn_Logout_Action" style="-fx-background-color: #d0c799;" text="Logout" />
+      <Button layoutX="198.0" layoutY="276.0" mnemonicParsing="false" onAction="#btn_Report_OnAction" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #d0c799;" text="Report">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

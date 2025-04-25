@@ -104,10 +104,10 @@ public class StaffFormController {
                 preparedStatement.setString(1,txt_Staffid.getText());
 
                 if (0 < preparedStatement.executeUpdate()){
-                    new Alert(Alert.AlertType.INFORMATION,"Sucsse Fully Delete").show();
+                    new Alert(Alert.AlertType.INFORMATION,"Successfully Deleted").show();
 
                 }else {
-                    new  Alert(Alert.AlertType.INFORMATION,"Not Sucsses Full Delete").show();
+                    new  Alert(Alert.AlertType.INFORMATION,"Delete Not Successful").show();
                 }
 
             } catch (SQLException e) {

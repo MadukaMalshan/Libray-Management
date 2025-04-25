@@ -8,19 +8,22 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="436.0" prefWidth="273.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.HomepageFormController">
+<AnchorPane prefHeight="309.0" prefWidth="186.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.HomepageFormController">
    <children>
-      <ImageView fitHeight="436.0" fitWidth="327.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="315.0" fitWidth="250.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Homepage.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0c799" height="81.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
-      <Label alignment="CENTER" layoutX="5.0" layoutY="8.0" prefHeight="65.0" prefWidth="275.0" text="Library Mangement System">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0c799" height="81.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label alignment="CENTER" layoutX="5.0" layoutY="8.0" prefHeight="65.0" prefWidth="191.0" text="Library Mangement System">
          <font>
-            <Font name="System Bold" size="19.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="96.0" layoutY="355.0" mnemonicParsing="false" onAction="#Lets_Go_Action" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #d0c799;" text="Lets Go" textFill="#1e1e1e" />
+      <Button layoutX="37.0" layoutY="241.0" mnemonicParsing="false" onAction="#Lets_Go_Action" prefHeight="49.0" prefWidth="133.0" style="-fx-background-color: #d0c799;" text="Lets Go" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
    </children>
 </AnchorPane>

@@ -19,7 +19,7 @@ public class LoginFormController {
     public void Rejister_on_Action(ActionEvent actionEvent) throws IOException {
         Stage stage=new Stage();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Register.fxml"))));
-        stage.setTitle("Rejister");
+        stage.setTitle("Register");
         stage.show();
     }
 
@@ -28,9 +28,9 @@ public class LoginFormController {
     public void btn_Login_Action(ActionEvent actionEvent) throws SQLException {
         Login User= LoginController.getInstance().getUser(txt_username.getText(),txt_password.getText());
         System.out.println(User);
-        new Alert(Alert.AlertType.INFORMATION,"Sucsses Fully").show();
+        new Alert(Alert.AlertType.INFORMATION,"Successfully").show();
         if (User==null){
-            new Alert(Alert.AlertType.INFORMATION,"Loging  Not Sucsses Fully").show();
+            new Alert(Alert.AlertType.INFORMATION,"Login Not Successful").show();
             return;
         }
         Stage stage = new Stage();

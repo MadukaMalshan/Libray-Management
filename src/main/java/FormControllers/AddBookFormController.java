@@ -83,10 +83,10 @@ public class AddBookFormController {
             preparedStatement.setString(1,txt_Bookid.getText());
 
             if (0 < preparedStatement.executeUpdate()){
-                new Alert(Alert.AlertType.INFORMATION,"Sucsse Fully Delete").show();
+                new Alert(Alert.AlertType.INFORMATION,"Successfully Deleted").show();
 
             }else {
-                new  Alert(Alert.AlertType.INFORMATION,"Not Sucsses Full Delete").show();
+                new  Alert(Alert.AlertType.INFORMATION,"Not Successfully Deleted").show();
             }
 
         } catch (SQLException e) {
@@ -113,10 +113,10 @@ public class AddBookFormController {
     @FXML
     void btn_View_Action(ActionEvent event) {
         colum_booksid.setCellValueFactory(new PropertyValueFactory<>("bookid"));
-        colum_tiittle.setCellValueFactory(new PropertyValueFactory<>("tiitle"));
+        colum_tiittle.setCellValueFactory(new PropertyValueFactory<>("title"));
         colum_Author.setCellValueFactory(new PropertyValueFactory<>("Author"));
         Colum_isbn.setCellValueFactory(new PropertyValueFactory<>("Isbn"));
-        Colum_Lanvage.setCellValueFactory(new PropertyValueFactory<>("lanvage"));
+        Colum_Lanvage.setCellValueFactory(new PropertyValueFactory<>("language"));
         Lodtable();
 
     }
@@ -151,7 +151,7 @@ public class AddBookFormController {
 
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Dashboard.fxml"))));
-            stage.setTitle("Dash Board");
+            stage.setTitle("DashBoard");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

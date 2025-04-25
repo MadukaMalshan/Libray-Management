@@ -42,7 +42,7 @@ public class MemberFormController implements Initializable {
 
     private void LodDate(){
         Date date = new Date();
-        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat f = new SimpleDateFormat("YYYY-MM-dd");
         BreakIterator lblDate;
         lbl_Date.setText(f.format(date));
         
@@ -86,7 +86,7 @@ public class MemberFormController implements Initializable {
         colum_memberid.setCellValueFactory(new PropertyValueFactory<>("memberid"));
         colum_full_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         colum_PhoneNumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
-        colum_Adreess.setCellValueFactory(new PropertyValueFactory<>("adrees"));
+        colum_Adreess.setCellValueFactory(new PropertyValueFactory<>("addrees"));
         colum_Headmastership.setCellValueFactory(new PropertyValueFactory<>("Membershipdates"));
         LodTable();
 
@@ -112,10 +112,10 @@ public class MemberFormController implements Initializable {
             preparedStatement.setString(1,txt_memberid.getText());
 
             if (0 < preparedStatement.executeUpdate()){
-                new Alert(Alert.AlertType.INFORMATION,"Sucsse Fully Delete").show();
+                new Alert(Alert.AlertType.INFORMATION,"Successfully Deleted").show();
 
             }else {
-                new  Alert(Alert.AlertType.INFORMATION,"Not Sucsses Full Delete").show();
+                new  Alert(Alert.AlertType.INFORMATION,"Delete Not Successful").show();
             }
 
         } catch (SQLException e) {

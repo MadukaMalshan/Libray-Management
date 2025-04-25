@@ -85,7 +85,7 @@ public class ReturnBooksFromController implements Initializable {
         try {
             // Validate selection first
             if (combo_browid.getSelectionModel().getSelectedItem() == null) {
-                txt_damage_or_No.setText("No Borrow ID Selected");
+                txt_damage_or_No.setText("Borrowed Id Is Not Selected");
                 return;
             }
 
@@ -112,7 +112,7 @@ public class ReturnBooksFromController implements Initializable {
 
                return_on_time.setText("Overdue: " + daysOverdue + " days");
                 txt_Amount.setText(String.format("%.2f", fine));
-                return_on_time.setText("Late Return");
+                return_on_time.setText("Late ");
             } else {
                 return_on_time.setText("On Time");
                 txt_Amount.setText("0.00");

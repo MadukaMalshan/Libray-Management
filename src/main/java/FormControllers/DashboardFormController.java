@@ -53,10 +53,18 @@ public class DashboardFormController {
         stage=new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Login.fxml"))));
-            stage.show();
             stage.setTitle("Login Form");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void btn_Report_OnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage=(Stage) Ancorpain_Dashbord.getScene().getWindow();
+        stage.close();
+        stage=new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Report.fxml"))));
+        stage.show();
+
     }
 }
